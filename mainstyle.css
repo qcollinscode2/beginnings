@@ -8,19 +8,47 @@ body {
     background-color:ghostwhite;
 }
 
-#landing-page {
-    background-image: url(space1.2.jpg);
-    height: 100vh;
-    width: 100%;
-    z-index: 5;
-}
-
-@keyframes example {
+@keyframes highlight-nav {
     0% {background-color: black;}
     100% {background-color: midnightblue;}
 }
 
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes transit-in-out {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes expand {
+    
+}
+
 /*Navigation Bar*/
+
+.logo {
+    text-decoration: none;
+    border: 0;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    top: 55%;
+    left: 49%;
+    position: absolute;
+    background: url(/euca.png) rgba(225,225,225,.5);
+    background-repeat: no-repeat;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    animation-name: fade;
+    animation-duration: 5s;
+}
 
 nav > ul {
     width: 100%;
@@ -48,7 +76,7 @@ nav > ul > li > a {
 nav > ul> li > a:hover {
     background-color: midnightblue;
     color: white;
-    animation-name: example;
+    animation-name: highlight-nav;
     animation-duration: .2s;
 }
 
@@ -60,11 +88,23 @@ nav > ul > li > ul > a:hover {
     display: block;
 }
 
-/*Inner Landing page*/
+/*Landing Page*/
 
-@keyframes transit-in-out {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+#landing-page {
+    background-image: url(space1.2.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+}
+
+/*Inner Landing Page*/
+
+.logo > a {
+    text-decoration: none;
+    display: block;
+    width: 36px;
+    height: 36px;
 }
 
 .inner-page {
@@ -79,39 +119,24 @@ nav > ul > li > ul > a:hover {
     z-index: 0;
 }
 
-.sep-border {
-    border-top-width: 10px;
-}
-
 /*Section One*/
 
-#content-one {
-    width: 100%;
-    position: absolute;
-    background-color: white;
-    height: 100%;
-}
-
-#content-page-one {
-    background-color: grey;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    padding: 0;
-}
-
-.content-inner1{
+.section1{
     width: 100%;
     height: 70%;
     position: absolute;
-    background-color: black;
-    border-top: lightgrey 5px solid;
-    border-bottom: lightgrey 5px solid;
-    border-right: grey 0px solid;
-    border-left: grey 0px solid;
+    background-color: #212121;
     padding: 0;
 }
 
+.section-inner1 {
+    background-color: grey;
+    height: 38%;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    top: 1664px;
+}
 
 .content-inner1 > h1 {
     text-align: center;
@@ -120,23 +145,46 @@ nav > ul > li > ul > a:hover {
     width: 400px;
     height: 100px;
     position: absolute; 
-    } 
+    }
 
-.darklight {
+/*Section Two*/
+
+.section2 {
+    background-color: #212121;
+    height: 70%;
+    width: 100%;
     position: absolute;
-    width: 440px;
-    top: 979px;
-    height: 1300px;
+    padding: 0;
+    top: 2036px;
 }
 
-.blurry-night {
-    width: 900px;
+.section-inner2 {
+    background-color: grey;
+    height: 38%;
+    width: 100%;
     position: absolute;
-    left: 50%;
-    top: 60px;
-    
+    padding: 0;
+    top: 2721px;
 }
 
-video {
-    
+/*Section Three*/
+
+.section3 {
+    background-color: #212121;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    top: 3093px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: grey;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    top: 3778px;
 }
