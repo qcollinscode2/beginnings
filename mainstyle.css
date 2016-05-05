@@ -4,6 +4,10 @@
     font-size: 1em;
 }
 
+*:focus {
+    outline-style: none;
+}
+
 body {
     background-color:ghostwhite;
 }
@@ -30,26 +34,6 @@ body {
 
 /*Navigation Bar*/
 
-.logo {
-    text-decoration: none;
-    border: 0;
-    width: 36px;
-    height: 36px;
-    margin: 0;
-    padding: 0;
-    top: 55%;
-    left: 49%;
-    position: absolute;
-    background: url(/euca.png) rgba(225,225,225,.5);
-    background-repeat: no-repeat;
-    border-left: solid 3px white;
-    border-right: solid 3px white;
-    border-top: solid 3px white;
-    border-bottom: solid 3px white;
-    animation-name: fade;
-    animation-duration: 5s;
-}
-
 nav > ul {
     width: 100%;
     float: right;
@@ -69,7 +53,7 @@ nav > ul > li {
 nav > ul > li > a {
     text-decoration: none;
     display:block;
-    padding: 4px 166.3px;;
+    padding: 4px 161.2px;;
     color: white;
 }
 
@@ -100,6 +84,26 @@ nav > ul > li > ul > a:hover {
 
 /*Inner Landing Page*/
 
+.logo {
+    text-decoration: none;
+    border: 0;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    top: 55%;
+    left: 49%;
+    position: absolute;
+    background: url(/euca.png) rgba(225,225,225,0);
+    background-repeat: no-repeat;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
 .logo > a {
     text-decoration: none;
     display: block;
@@ -108,15 +112,18 @@ nav > ul > li > ul > a:hover {
 }
 
 .inner-page {
-    color: whitesmoke;
+    color: white;
     position: absolute;
-    right: 30%;
-    bottom: 50%;
+    right: 35%;
+    bottom: 45%;
     font-size: 100px;
     transition-delay: 1s;
     animation-name: transit-in-out;
     animation-duration: 5s;
     z-index: 0;
+    letter-spacing: 20px;
+    font-style: italic;
+    padding: 9px;
 }
 
 /*Section One*/
@@ -187,4 +194,57 @@ footer {
     position: absolute;
     padding: 0;
     top: 3778px;
+}
+
+ form {
+    position: absolute;
+    left: 760px;
+    height: 33px;
+    top: 51px;
+    border: 10px solid #212129;
+    
+}
+
+footer > form > input:focus{
+    outline-style: none;
+}
+
+input, textarea {
+    display:inline-block;
+    text-shadow: none;
+    width: 301px;
+    height: 33px;
+    font-size: 26px;
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+footer > form > button {
+    position:relative;
+    width: 100px;
+    height: 35px;
+    bottom: 3px;
+    background: #212121;
+    color: white;
+    border: solid black;
+    border-left: solid black 3px;
+    bottom: 4px;
+    
+    
+    
+}
+
+
+
+.divider {
+    position: relative;
+    color: white;
+    top: 150px;
+    width: 1750px;
+    left: 70px;
 }
