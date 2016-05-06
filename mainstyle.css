@@ -95,12 +95,10 @@ nav > ul > li > ul > a:hover {
     top: 55%;
     left: 49%;
     position: absolute;
-    background: url(/euca.png) rgba(225,225,225,0);
+    background: url(/euca.png);
+    color: rgba(225,225,225,0);
     background-repeat: no-repeat;
-    border-left: solid 3px white;
-    border-right: solid 3px white;
-    border-top: solid 3px white;
-    border-bottom: solid 3px white;
+    border: solid 3px white;
     animation-name: fade;
     animation-duration: 5s;
 }
@@ -139,9 +137,9 @@ nav > ul > li > ul > a:hover {
 }
 
 .section-inner1 {
-    background-color: grey;
+    background-color: dimgrey;
     height: 355px;
-    width: 100%;
+    width: 1903px;
     position: absolute;
     padding: 0;
     top: 1574px;
@@ -161,16 +159,16 @@ nav > ul > li > ul > a:hover {
 .section2 {
     background-color: #212121;
     height: 655px;
-    width: 100%;
+    width: 1903px;
     position: absolute;
     padding: 0;
     top: 1929px;
 }
 
 .section-inner2 {
-    background-color: grey;
+    background-color: dimgrey;
     height: 355px;
-    width: 100%;
+    width: 1903px;
     position: absolute;
     padding: 0;
     top: 2584px;
@@ -181,7 +179,7 @@ nav > ul > li > ul > a:hover {
 .section3 {
     background-color: #212121;
     height: 655px;
-    width: 100%;
+    width: 1903px;
     position: absolute;
     padding: 0;
     top: 2939px;
@@ -190,9 +188,9 @@ nav > ul > li > ul > a:hover {
 /*Footer*/
 
 footer {
-    background-color: grey;
+    background-color: dimgrey;
     height: 355px;
-    width: 100%;
+    width: 1903px;;
     position: absolute;
     padding: 0;
     top: 3594px;
@@ -249,9 +247,82 @@ footer > form > button:active {
 
 .divider {
     position: relative;
-    color: dimgrey;
+    color: grey;
     top: 150px;
     width: 1750px;
     left: 70px;
     border: solid;
+}
+
+
+
+.behance {
+    background: url(img/behance13.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+
+.twitter {
+    background: url(img/twitter.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    left: 100px;
+    width: 90px;
+    height: 90px;
+}
+
+.facebook {
+    background: url(img/facebook2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: 200px;
+    bottom: 90px;
+}
+
+.instagram {
+    background: url(img/instagram19.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: 300px;
+    bottom: 180px;
+}
+
+footer > ul> li {
+    list-style: none;
+}
+
+footer > ul {
+    position: relative;
+    height: 100px;
+    width: 400px;
+    left: 740px;
+    top: 200px;
+}
+
+.instagram:hover,.facebook:hover, .twitter:hover, .behance:hover {
+    
+    background-color: grey;
+    border-radius: 100%;
+    border: 0;
+    
+}
+
+footer > ul > li > a {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.instagram:active, .facebook:active, .twitter:active, .behance:active {
+    background-color: darkgray;
 }
