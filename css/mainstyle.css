@@ -202,7 +202,7 @@ footer {
     position: absolute;
     left: 760px;
     height: 33px;
-    top: 51px;
+    top: 97px;
     border: 10px solid #212129;
     
 }
@@ -247,9 +247,9 @@ footer > form > button:active {
     color: black;
 }
 
-.divider {
+.divider1 {
     position: relative;
-    color: grey;
+    color: #212121;
     top: 150px;
     width: 1750px;
     left: 70px;
@@ -263,8 +263,8 @@ footer > form > button:active {
     background-repeat: no-repeat;
     background-size:contain;
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
 }
 
 .twitter {
@@ -273,8 +273,8 @@ footer > form > button:active {
     background-size:contain;
     position: relative;
     left: 100px;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
 }
 
 .facebook {
@@ -282,10 +282,10 @@ footer > form > button:active {
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     left: 200px;
-    bottom: 90px;
+    bottom: 60px;
 }
 
 .instagram {
@@ -293,10 +293,10 @@ footer > form > button:active {
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     left: 300px;
-    bottom: 180px;
+    bottom: 120px;
 }
 
 footer > ul> li {
@@ -305,10 +305,10 @@ footer > ul> li {
 
 footer > ul {
     position: relative;
-    height: 100px;
+    height: 60px;
     width: 400px;
-    left: 740px;
-    top: 200px;
+    left: 757px;
+    top: 270px;
 }
 
 .instagram:hover,.facebook:hover, .twitter:hover, .behance:hover {
@@ -321,10 +321,44 @@ footer > ul {
 
 footer > ul > li > a {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
 }
 
 .instagram:active, .facebook:active, .twitter:active, .behance:active {
     background-color: darkgray;
+}
+
+.copyright {
+    position: relative;
+    top: 231px;
+    width: 160px;
+    left: 10px;
+}
+
+.footer-footer {
+    position: relative;
+    top: 213px;
+    float: right;
+    right: 40px;
+    letter-spacing: 2px;
+}
+
+.footer-footer > a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-footer > a:visited {
+    color: none;   
+}
+
+.footer-footer > a:hover {
+    color: white;
+}
+
+.divider2 {
+    position: relative;
+    top: 190px;
+    border: 3px solid black;
 }
