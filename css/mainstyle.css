@@ -10,6 +10,7 @@
 
 body {
     background-color:ghostwhite;
+    z-index: -5;
 }
 
 @keyframes highlight-nav {
@@ -76,10 +77,10 @@ nav > ul > li > ul > a:hover {
 /*Landing Page*/
 
 #landing-page {
-    background-image: url(/img/space1.2.jpg);
+    background: url(../img/space12.jpg);
     background-repeat: no-repeat;
     height: 979px;
-    position: absolute;
+    position: static;
     width: 1903px;
     z-index: -1;
 }
@@ -96,7 +97,7 @@ nav > ul > li > ul > a:hover {
     top: 550px;
     left: 930px;
     position: absolute;
-    background: url(/img/euca.png);
+    background: url(../img/euca.png);
     color: rgba(225,225,225,0);
     background-repeat: no-repeat;
     border: solid 3px white;
@@ -258,7 +259,7 @@ footer > form > button:active {
 
 
 .behance {
-    background: url(/img/behance13.png);
+    background: url(../img/behance13.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: absolute;
@@ -267,7 +268,7 @@ footer > form > button:active {
 }
 
 .twitter {
-    background: url(/img/twitter.png);
+    background: url(../img/twitter.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
@@ -277,7 +278,7 @@ footer > form > button:active {
 }
 
 .facebook {
-    background: url(/img/facebook2.png);
+    background: url(../img/facebook2.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
@@ -288,7 +289,7 @@ footer > form > button:active {
 }
 
 .instagram {
-    background: url(/img/instagram19.png);
+    background: url(../img/instagram19.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
