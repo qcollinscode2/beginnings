@@ -35,7 +35,7 @@ body {
 /*Navigation Bar*/
 
 nav > ul {
-    width: 100%;
+    width: 1903px;
     float: right;
     margin: 0 0 3em 0;
     list-style: none;
@@ -43,6 +43,7 @@ nav > ul {
     background-color: rgba(0,0,0, 0.2);
     border-bottom: 1px solid midnightblue;
     border-top: 0px solid blue;
+    position: absolute;
 }
 
 
@@ -75,12 +76,12 @@ nav > ul > li > ul > a:hover {
 /*Landing Page*/
 
 #landing-page {
-    background-image: url(space1.2.jpg);
+    background-image: url(/img/space1.2.jpg);
     background-repeat: no-repeat;
     height: 979px;
-    position: static;
+    position: absolute;
     width: 1903px;
-    z-index: 5;
+    z-index: -1;
 }
 
 /*Inner Landing Page*/
@@ -92,10 +93,10 @@ nav > ul > li > ul > a:hover {
     height: 36px;
     margin: 0;
     padding: 0;
-    top: 55%;
-    left: 49%;
+    top: 550px;
+    left: 930px;
     position: absolute;
-    background: url(/euca.png);
+    background: url(/img/euca.png);
     color: rgba(225,225,225,0);
     background-repeat: no-repeat;
     border: solid 3px white;
@@ -113,8 +114,8 @@ nav > ul > li > ul > a:hover {
 .inner-page {
     color: white;
     position: absolute;
-    right: 35%;
-    bottom: 45%;
+    right: 665px;
+    bottom: 450px;
     font-size: 100px;
     transition-delay: 1s;
     animation-name: transit-in-out;
@@ -257,7 +258,7 @@ footer > form > button:active {
 
 
 .behance {
-    background: url(img/behance13.png);
+    background: url(/img/behance13.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: absolute;
@@ -266,7 +267,7 @@ footer > form > button:active {
 }
 
 .twitter {
-    background: url(img/twitter.png);
+    background: url(/img/twitter.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
@@ -276,7 +277,7 @@ footer > form > button:active {
 }
 
 .facebook {
-    background: url(img/facebook2.png);
+    background: url(/img/facebook2.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
@@ -287,7 +288,7 @@ footer > form > button:active {
 }
 
 .instagram {
-    background: url(img/instagram19.png);
+    background: url(/img/instagram19.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: relative;
