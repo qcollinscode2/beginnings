@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+}
+
+*:focus {
+    outline-style: none;
+}
+
+body {
+    background-color:ghostwhite;
+}
+
+@keyframes highlight-nav {
+    0% {background-color: black;}
+    100% {background-color: midnightblue;}
+}
+
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+@keyframes transit-in-out {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes expand {
+    
+}
+
+/*Navigation Bar*/
+
+nav > ul {
+    width: 100%;
+    float: right;
+    margin: 0 0 3em 0;
+    list-style: none;
+    padding: 0;
+    background-color: rgba(0,0,0, 0.2);
+    border-bottom: 1px solid midnightblue;
+    border-top: 0px solid blue;
+}
+
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    display:block;
+    padding: 4px 161.2px;;
+    color: white;
+}
+
+nav > ul> li > a:hover {
+    background-color: midnightblue;
+    color: white;
+    animation-name: highlight-nav;
+    animation-duration: .2s;
+}
+
+.navbar > .nav > .nav-item-dropdown > .dropdown-container {
+    display: none;
+}
+
+nav > ul > li > ul > a:hover {
+    display: block;
+}
+
+/*Landing Page*/
+
+#landing-page {
+    background-image: url(space1.2.jpg);
+    background-repeat: no-repeat;
+    height: 979px;
+    position: static;
+    width: 1903px;
+    z-index: 5;
+}
+
+/*Inner Landing Page*/
+
+.logo {
+    text-decoration: none;
+    border: 0;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    top: 55%;
+    left: 49%;
+    position: absolute;
+    background: url(/euca.png);
+    color: rgba(225,225,225,0);
+    background-repeat: no-repeat;
+    border: solid 3px white;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+.logo > a {
+    text-decoration: none;
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.inner-page {
+    color: white;
+    position: absolute;
+    right: 35%;
+    bottom: 45%;
+    font-size: 100px;
+    transition-delay: 1s;
+    animation-name: transit-in-out;
+    animation-duration: 5s;
+    z-index: 0;
+    letter-spacing: 20px;
+    font-style: italic;
+    padding: 9px;
+}
+
+/*Section One*/
+
+.section1{
+    width: 1903px;
+    height: 655px;
+    position: absolute;
+    background-color: #212121;
+    padding: 0;
+    top: 979px;
+}
+
+.section-inner1 {
+    background-color: dimgrey;
+    height: 355px;
+    width: 1903px;
+    position: absolute;
+    padding: 0;
+    top: 1574px;
+}
+
+.content-inner1 > h1 {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    width: 400px;
+    height: 100px;
+    position: absolute; 
+    }
+
+/*Section Two*/
+
+.section2 {
+    background-color: #212121;
+    height: 655px;
+    width: 1903px;
+    position: absolute;
+    padding: 0;
+    top: 1929px;
+}
+
+.section-inner2 {
+    background-color: dimgrey;
+    height: 355px;
+    width: 1903px;
+    position: absolute;
+    padding: 0;
+    top: 2584px;
+}
+
+/*Section Three*/
+
+.section3 {
+    background-color: #212121;
+    height: 655px;
+    width: 1903px;
+    position: absolute;
+    padding: 0;
+    top: 2939px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: dimgrey;
+    height: 355px;
+    width: 1903px;;
+    position: absolute;
+    padding: 0;
+    top: 3594px;
+}
+
+ form {
+    position: absolute;
+    left: 760px;
+    height: 33px;
+    top: 51px;
+    border: 10px solid #212129;
+    
+}
+
+footer > form > input:focus{
+    outline-style: none;
+}
+
+input, textarea {
+    display:inline-block;
+    text-shadow: none;
+    width: 301px;
+    height: 33px;
+    font-size: 26px;
+    border:none;
+    padding: 0;
+    margin: 0;
+    background-color: darkgrey;
+    border-right: solid #212121 9px;
+}
+
+input:focus {
+    outline-style: none;
+    background-color: white;
+}
+
+footer > form > button {
+    position:relative;
+    width: 100px;
+    height: 32.6px;
+    bottom: 3px;
+    background: #212121;
+    color: dimgrey;
+    border: solid dimgrey;
+    bottom: 4px;
+    font-weight: bold;
+}
+
+footer > form > button:active {
+    border-left: solid  3px;
+    border: solid black 3px;
+    color: black;
+}
+
+.divider {
+    position: relative;
+    color: grey;
+    top: 150px;
+    width: 1750px;
+    left: 70px;
+    border: solid;
+}
+
+
+
+.behance {
+    background: url(img/behance13.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+
+.twitter {
+    background: url(img/twitter.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    left: 100px;
+    width: 90px;
+    height: 90px;
+}
+
+.facebook {
+    background: url(img/facebook2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: 200px;
+    bottom: 90px;
+}
+
+.instagram {
+    background: url(img/instagram19.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: 300px;
+    bottom: 180px;
+}
+
+footer > ul> li {
+    list-style: none;
+}
+
+footer > ul {
+    position: relative;
+    height: 100px;
+    width: 400px;
+    left: 740px;
+    top: 200px;
+}
+
+.instagram:hover,.facebook:hover, .twitter:hover, .behance:hover {
+    
+    background-color: grey;
+    border-radius: 100%;
+    border: 0;
+    
+}
+
+footer > ul > li > a {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.instagram:active, .facebook:active, .twitter:active, .behance:active {
+    background-color: darkgray;
+}
