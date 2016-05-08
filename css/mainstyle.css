@@ -9,13 +9,8 @@
 }
 
 body {
-    background-color:ghostwhite;
+    background-color:black;
     z-index: -5;
-}
-
-@keyframes highlight-n1av {
-    0% {background-color: black;}
-    100% {background-color: midnightblue;}
 }
 
 
@@ -80,7 +75,7 @@ nav > ul > li > ul > a:hover {
     background: url(../img/space12.jpg);
     background-repeat: no-repeat;
     height: 979px;
-    position: static;
+    position: fixed;
     width: 1903px;
     z-index: -1;
 }
@@ -100,9 +95,12 @@ nav > ul > li > ul > a:hover {
     background: url(../img/euca.png);
     color: rgba(225,225,225,0);
     background-repeat: no-repeat;
-    border: solid 3px #909090;
+    border: solid 4.8px #3366FF;
     animation-name: fade;
     animation-duration: 5s;
+    border-radius: 20%;
+    border-right: none;
+    border-left: none;
 }
 
 .logo > a {
@@ -130,6 +128,12 @@ nav > ul > li > ul > a:hover {
 
 /*Section One*/
 
+.wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 .section1{
     width: 1903px;
     height: 655px;
@@ -137,6 +141,8 @@ nav > ul > li > ul > a:hover {
     background-color: midnightblue;
     padding: 0;
     top: 979px;
+    border-top-left-radius: 10% 100px;
+    border-top-right-radius: 10% 100px;
 }
 
 .section-inner1 {
