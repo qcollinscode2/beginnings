@@ -61,14 +61,6 @@ nav > ul> li > a:hover {
     color: white;
 }
 
-.navbar > .nav > .nav-item-dropdown > .dropdown-container {
-    display: none;
-}
-
-nav > ul > li > ul > a:hover {
-    display: block;
-}
-
 /*Landing Page*/
 
 #landing-page {
@@ -129,15 +121,22 @@ nav > ul > li > ul > a:hover {
     border: double 20.8px #3366FF;
     border-left: 4px #3366FF;
     border-right: none;
+    border-bottom: double 20.8px royalblue;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 95px;
+    border-bottom-right-radius: 95px;
+}
+
+.color-blue {
+    color: silver;
+}
+
+.color-silver {
+    color: orangered;
 }
 
 /*Section One*/
-
-.wrapper {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
 
 .section1{
     width: 1903px;
@@ -166,15 +165,6 @@ nav > ul > li > ul > a:hover {
 }
 
 /*rgba(11,89,399,.69)*/
-
-.content-inner1 > h1 {
-    text-align: center;
-    font-size: 100px;
-    color: white;
-    width: 400px;
-    height: 100px;
-    position: absolute; 
-}
 
 /*Section Two*/
 
@@ -298,15 +288,6 @@ footer > form > button:active {
     color: dimgrey;
     background-color: black;
     transition: 0.2s ease;
-}
-
-.divider1 {
-    position: relative;
-    color: #212121;
-    top: 150px;
-    width: 1750px;
-    left: 70px;
-    border: solid;
 }
 
 .behance {
