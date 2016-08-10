@@ -1,2 +1,2 @@
 # The-Beginning
-<img src="img/beginnings.jpg"></img>
+<img src="img/beginnings.png"></img>
